@@ -1,31 +1,27 @@
-
 import express from "express";
 import Task from "../models/Task.js";
-import multer from "multer";
 
 const router = express.Router();
 
-const storage = multer.diskStorage({
-  destination: "uploads/",
-  filename: (req, file, cb) => cb(null, Date.now() + "-" + file.originalname)
-});
-const upload = multer({ storage });
-
+/* =====================
+   GET ALL TASKS
+===================== */
 router.get("/", async (req, res) => {
-  const tasks = await Task.find();
+  const tasks = await Task.find().sort({ createdAt: -1 });
   res.json(tasks);
 });
 
-router.post("/", upload.single("media"), async (req, res) => {
-  const task = new Task({
-    ...req.body,
-    taggedUsers: req.body.taggedUsers?.split(",") || [],
-    media: req.file?.path
-  });
-  await task.save();
+/* =====================
+   ADD TASK
+===================== */
+router.post("/", async (req, res) => {
+  const task = await Task.create(req.body);
   res.json(task);
 });
 
+/* =====================
+   MARK COMPLETE
+===================== */
 router.put("/:id/complete", async (req, res) => {
   const task = await Task.findByIdAndUpdate(
     req.params.id,
@@ -33,6 +29,26 @@ router.put("/:id/complete", async (req, res) => {
     { new: true }
   );
   res.json(task);
+});
+
+/* =====================
+   UPDATE TASK
+===================== */
+router.put("/:id", async (req, res) => {
+  const updated = await Task.findByIdAndUpdate(
+    req.params.id,
+    req.body,
+    { new: true }
+  );
+  res.json(updated);
+});
+
+/* =====================
+   DELETE TASK
+===================== */
+router.delete("/:id", async (req, res) => {
+  await Task.findByIdAndDelete(req.params.id);
+  res.json({ message: "Task deleted" });
 });
 
 export default router;

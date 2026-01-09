@@ -1,14 +1,31 @@
+import { logout } from "../utils/auth";
+
 export default function Sidebar() {
+  const user = JSON.parse(localStorage.getItem("user"));
+
   return (
     <aside className="sidebar">
-      <div className="logo">✔ Task Tracker</div>
+      {/* LOGO */}
+      <div className="logo">
+        <div className="logo-icon">📋</div>
+        <span>Task Tracker</span>
+      </div>
 
-      <nav>
-        <a className="active">Dashboard</a>
-        <a>All Tasks</a>
-        <a>Completed</a>
-        <a>Pending</a>
-      </nav>
+      {/* NAV */}
+      <nav className="nav-links">
+  <span className="active">Dashboard</span>
+
+  <button className="logout-btn secondary" onClick={logout}>
+    Logout
+  </button>
+</nav>
+
+
+      {/* USER */}
+      <div className="user-box">
+        <div className="avatar">{user?.name?.[0] || "A"}</div>
+        <span>{user?.name || "User"}</span>
+      </div>
     </aside>
   );
 }
