@@ -13,18 +13,24 @@ screenshots/
  ├── 03-task-details.png
  ├── 04-charts.png
 ```
+### LOGIN
+<img width="1916" height="898" alt="login" src="https://github.com/user-attachments/assets/fa6c1d29-6a9d-4323-89bf-dd8511c8aef7" />
 
 ### Dashboard Overview
-![Dashboard](https://github.com/user-attachments/assets/a2b5bf9c-c449-442a-98be-6ad89ae3151d)
+<img width="1917" height="908" alt="Dashboard" src="https://github.com/user-attachments/assets/e4fa00d9-90cf-4865-9dda-832e8bb85ac6" />
 
 ### Add New Task
-![Add Task](https://github.com/user-attachments/assets/7a5ac441-b218-4436-8076-5a9bb8ba514f)
+<img width="565" height="811" alt="add" src="https://github.com/user-attachments/assets/e9871502-34e9-4878-81cf-3de4cb49d21a" />
 
 ### Task Details (with optional fields)
-![Task Details](https://github.com/user-attachments/assets/bcd4a492-ab35-450e-938f-e943dcf1e6c5)
+<img width="1918" height="898" alt="display" src="https://github.com/user-attachments/assets/274ef4e3-eba6-4113-9b17-95e9015bfbc3" />
+
+### Update and Delete Tasks
+<img width="1918" height="892" alt="updateDEL" src="https://github.com/user-attachments/assets/5a111ee3-5686-4e4e-829c-9366c9c96db3" />
 
 ### Status & Priority Charts
-![Charts](https://github.com/user-attachments/assets/6720cf6c-56f4-452d-8d2c-6ea9f18f034d)
+<img width="1912" height="896" alt="DELandUP" src="https://github.com/user-attachments/assets/0a6619e7-55e7-45c3-b9b2-baa952fad862" />
+
 
 ---
 
