@@ -2,15 +2,6 @@
 
 A **modern, professional Task Tracker Dashboard** built using the **MERN stack** (MongoDB, Express, React, Node.js). This application allows users to create, manage, and visualize tasks with a clean UI and real-time charts.
 
----
-
-## 🚀 Live Demo
-
-* **Frontend (Netlify):** *Add your Netlify URL here*
-* **Backend (Render):** *Add your Render API URL here*
-
----
-
 ## 📸 Screenshots
 
 > 📌 Add screenshots inside a `screenshots/` folder in the root of this repo.
@@ -40,7 +31,8 @@ screenshots/
 
 ### Status & Priority Charts
 
-![Charts](![Uploading tt.png…]()
+![Charts](<img width="1912" height="901" alt="tt" src="https://github.com/user-attachments/assets/6720cf6c-56f4-452d-8d2c-6ea9f18f034d" />
+)
 )
 
 ---
