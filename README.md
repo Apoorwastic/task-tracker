@@ -15,25 +15,16 @@ screenshots/
 ```
 
 ### Dashboard Overview
-
-![Dashboard](<img width="1918" height="742" alt="Dashboard" src="https://github.com/user-attachments/assets/a2b5bf9c-c449-442a-98be-6ad89ae3151d" />
-)
+![Dashboard](https://github.com/user-attachments/assets/a2b5bf9c-c449-442a-98be-6ad89ae3151d)
 
 ### Add New Task
-
-![Add Task](<img width="676" height="688" alt="add" src="https://github.com/user-attachments/assets/7a5ac441-b218-4436-8076-5a9bb8ba514f" />
-)
+![Add Task](https://github.com/user-attachments/assets/7a5ac441-b218-4436-8076-5a9bb8ba514f)
 
 ### Task Details (with optional fields)
-
-![Task Details](<img width="1207" height="806" alt="display" src="https://github.com/user-attachments/assets/bcd4a492-ab35-450e-938f-e943dcf1e6c5" />
-)
+![Task Details](https://github.com/user-attachments/assets/bcd4a492-ab35-450e-938f-e943dcf1e6c5)
 
 ### Status & Priority Charts
-
-![Charts](<img width="1912" height="901" alt="tt" src="https://github.com/user-attachments/assets/6720cf6c-56f4-452d-8d2c-6ea9f18f034d" />
-)
-)
+![Charts](https://github.com/user-attachments/assets/6720cf6c-56f4-452d-8d2c-6ea9f18f034d)
 
 ---
 
@@ -72,12 +63,6 @@ screenshots/
 * MongoDB (Atlas)
 * Mongoose
 * Multer (media-ready support)
-
-### Deployment
-
-* Frontend: **Netlify**
-* Backend: **Render**
-* Database: **MongoDB Atlas**
 
 ---
 
@@ -164,41 +149,6 @@ http://localhost:5173
 
 ---
 
-## 🌍 Deployment Guide
-
-### Backend (Render)
-
-1. Create a **Web Service** on Render
-2. Connect GitHub repository
-3. Select `server` directory
-4. Set:
-
-   * Build Command: `npm install`
-   * Start Command: `npm start`
-5. Add Environment Variable:
-
-   ```
-   MONGO_URI=your_mongodb_atlas_connection_string
-   ```
-
----
-
-### Frontend (Netlify)
-
-1. Go to Netlify → Add New Site → Import from GitHub
-2. Select repository
-3. Configure:
-
-   * **Base directory:** `client`
-   * **Build command:** `npm run build`
-   * **Publish directory:** `client/dist`
-4. Add `_redirects` file in `client/public`:
-
-   ```
-   /*  /index.html  200
-   ```
-
----
 
 ## 🧠 Notes
 
@@ -210,7 +160,7 @@ http://localhost:5173
 
 ## 👤 Author
 
-**Apoorwa Priyam**
+**Apoorwa**
 GitHub: [https://github.com/Apoorwastic](https://github.com/Apoorwastic)
 
 ---
